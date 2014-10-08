@@ -1,5 +1,10 @@
 <ion-view title="League Table">
   <ion-content class="padding">
-    <h1>League Table</h1>
+    <h3>League Table</h3>
+        <ion-list>
+      <ion-item ng-repeat="league in leaguedata" type="item-text-wrap" href="#/tab/fixtures/">
+         {{league.id}} {{league.name}} {{league.played}} {{league.won}} {{league.draw}} {{league.lost}} {{league.gf}} {{league.ga}} {{league.gd}} {{league.points}}
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

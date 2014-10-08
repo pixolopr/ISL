@@ -1,6 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', function($scope, MyServices) {
+    
+    var tablesuccess = function(data, status)
+    {
+        $scope.leaguedata = data;
+    };
+    MyServices.gettable().success(tablesuccess);
 })
 
 .controller('FixturesCtrl', function($scope, MyServices ) {
