@@ -38,47 +38,57 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     // Each tab has its own nav history stack:
 
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.league', {
+      url: '/league',
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
+        'tab-league': {
+          templateUrl: 'templates/tab-league.html',
           controller: 'DashCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.fixtures', {
+      url: '/fixtures',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'tab-fixtures': {
+          templateUrl: 'templates/tab-fixtures.html',
+          controller: 'FixturesCtrl'
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.pixolo', {
+      url: '/pixolo',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-pixolo': {
+          templateUrl: 'templates/tab-pixolo.html',
+          controller: 'PixoloCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.teams', {
+      url: '/teams',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'tab-teams': {
+          templateUrl: 'templates/tab-teams.html',
+          controller: 'TeamsCtrl'
+        }
+      }
+    })
+    
+    .state('tab.star', {
+      url: '/star',
+      views: {
+        'tab-star': {
+          templateUrl: 'templates/tab-star.html',
+          controller: 'StarCtrl'
         }
       }
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/league');
 
 });
 
