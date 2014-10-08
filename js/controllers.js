@@ -17,7 +17,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PixoloCtrl', function($scope, $stateParams) {
-  $scope.friend = Friends.get($stateParams.friendId);
+  
 })
 
 .controller('TeamsCtrl', function($scope, $stateParams){
