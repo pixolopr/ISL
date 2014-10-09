@@ -5,22 +5,30 @@
     <table class="table2">
                 <thead>
                     <tr>
-                        <th>Date/Time</th>
                         <th></th>
-                        <th>Home Team</th>
-                        <th>Score</th>
-                        <th>Away Team</th>
-                        <th></th>
+                        <th>Team</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="fixture in leaguedata">
-                        <td>{{fixture.time}}</td>
+                    <tr ng-repeat="league in leaguedata">
                         <td></td>
-                        <td>{{fixture.homename}}</td>
-                        <td>{{fixture.score}}</td>
-                        <td>{{fixture.awayname}}</td>
-                        <td></td>
+                        <td>{{league.name}}</td>
+                        <td>{{league.played}}</td>
+                        <td>{{league.won}}</td>
+                        <td>{{league.draw}}</td>
+                        <td>{{league.lost}}</td>
+                        <td>{{league.gf}}</td>
+                        <td>{{league.ga}}</td>
+                        <td>{{league.gd}}</td>
+                        <td>{{league.points}}</td>
                         
                     </tr>
                    
