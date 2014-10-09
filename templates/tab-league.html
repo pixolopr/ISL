@@ -1,39 +1,39 @@
 <ion-view title="League Table">
-  <ion-content class="padding">
-    <h3>League Table</h3>
-        
-    <table class="table2">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Team</th>
-                        <th>P</th>
-                        <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
-                        <th>GF</th>
-                        <th>GA</th>
-                        <th>GD</th>
-                        <th>Pts</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="league in leaguedata">
-                        <td></td>
-                        <td>{{league.name}}</td>
-                        <td>{{league.played}}</td>
-                        <td>{{league.won}}</td>
-                        <td>{{league.draw}}</td>
-                        <td>{{league.lost}}</td>
-                        <td>{{league.gf}}</td>
-                        <td>{{league.ga}}</td>
-                        <td>{{league.gd}}</td>
-                        <td>{{league.points}}</td>
-                        
-                    </tr>
-                   
-                </tbody>
-            
-            </table>
-  </ion-content>
+    <ion-content class="padding">
+        <h3>League Table</h3>
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Team</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>GD</th>
+                    <th>Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ion-list>
+                    <ion-item ng-repeat="league in leaguedata" type="item-text-wrap" href="#/tab/fixtures/">
+                        <tr>
+                            <td></td>
+                            <td>{{league.name}}</td>
+                            <td style="align:center">{{league.played}}</td>
+                            <td style="align:center">{{league.won}}</td>
+                            <td style="align:center">{{league.draw}}</td>
+                            <td style="align:center">{{league.lost}}</td>
+                            <td style="align:center">{{league.gf}}</td>
+                            <td style="align:center">{{league.ga}}</td>
+                            <td style="align:center">{{league.gd}}</td>
+                            <td style="align:center">{{league.points}}</td>
+                        </tr>
+                    </ion-item>
+                </ion-list>
+            </tbody>
+        </table>
+    </ion-content>
 </ion-view>
