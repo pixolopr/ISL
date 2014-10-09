@@ -8,7 +8,7 @@ angular.module('starter.controllers', [])
         console.log(data);
     };
     MyServices.gettable().success(tablesuccess);
-   /* $scope.leaguedata = {"fixture":[{"name":"arsenal","awayname":"mumbai"}, {"name":"mumbai","awayname":"mumbai"}], "yellowcards":[{"yellowh":"abhay", "yellowa":"tushar"},{"yellowh":"hamish", "yellowa":""}]};*/
+   $scope.leaguedata = {"fixture":[{"name":"arsenal","awayname":"mumbai"}, {"name":"mumbai","awayname":"mumbai"}]};
 /*    console.log($scope.leaguedata);
     console.log($scope.leaguedata.fixture[0].name);*/
 })

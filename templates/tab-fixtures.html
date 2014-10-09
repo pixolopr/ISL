@@ -8,15 +8,17 @@
                     <th>Home Team</th>
                     <th>Score</th>
                     <th>Away Team</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody ng-repeat="fixture in fixturedata">
                 <tr style="height:40px; text-align: center;">
-                    <td>{{league.time}}</td>
-                    <td></td>
+                    <td>{{fixture.time}}</td>
+                    <td><img src={{fixture.homelogo}} width="25px" height="25px"></td>
                     <td>{{fixture.homename}}</td>
                     <td style="text-align: center;">{{fixture.score}}</td>
                     <td style="text-align: center;">{{fixture.awayname}}</td>
+                    <td><img src={{fixture.awaylogo}} width="25px" height="25px"></td>
                 </tr>
 
             </tbody>
