@@ -15,10 +15,12 @@
                     <th>GD</th>
                     <th>Pts</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+            </table>
+            
                 <ion-list>
                     <ion-item ng-repeat="league in leaguedata" type="item-text-wrap" href="#/tab/fixtures/">
+                       <table class="table2">
                         <tr>
                             <td></td>
                             <td>{{league.name}}</td>
@@ -31,9 +33,9 @@
                             <td style="align:center">{{league.gd}}</td>
                             <td style="align:center">{{league.points}}</td>
                         </tr>
+                        </table>
                     </ion-item>
                 </ion-list>
-            </tbody>
-        </table>
+            
     </ion-content>
 </ion-view>
