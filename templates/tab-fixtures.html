@@ -1,9 +1,25 @@
 <ion-view title="Fixtures">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="fixture in fixturedata" type="item-text-wrap" href="#/tab/fixtures/">
-          {{fixture.homename}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+        <table class="table2">
+            <thead>
+                <tr style="height:50px">
+                    <th>Time/Date</th>
+                    <th></th>
+                    <th>Home Team</th>
+                    <th>Score</th>
+                    <th>Away Team</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="fixture in fixturedata">
+                <tr style="height:40px; text-align: center;">
+                    <td>{{league.time}}</td>
+                    <td></td>
+                    <td>{{fixture.homename}}</td>
+                    <td style="text-align: center;">{{fixture.score}}</td>
+                    <td style="text-align: center;">{{fixture.awayname}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </ion-content>
 </ion-view>
