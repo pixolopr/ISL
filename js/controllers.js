@@ -5,8 +5,12 @@ angular.module('starter.controllers', [])
     var tablesuccess = function(data, status)
     {
         $scope.leaguedata = data;
+        console.log(data);
     };
     MyServices.gettable().success(tablesuccess);
+   /* $scope.leaguedata = {"fixture":[{"name":"arsenal","awayname":"mumbai"}, {"name":"mumbai","awayname":"mumbai"}], "yellowcards":[{"yellowh":"abhay", "yellowa":"tushar"},{"yellowh":"hamish", "yellowa":""}]};*/
+/*    console.log($scope.leaguedata);
+    console.log($scope.leaguedata.fixture[0].name);*/
 })
 
 .controller('FixturesCtrl', function($scope, MyServices ) {
