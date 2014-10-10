@@ -13,22 +13,21 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FixturesCtrl', function ($scope, MyServices, $location) {
-   
- /*   var fuxturesuccess = function (data, status) {
+
+    var fuxturesuccess = function (data, status) {
         $scope.fixturedata = data;
         console.log($scope.fixturedata);
     };
-    MyServices.getfixtures().success(fuxturesuccess);*/
-    
-    $scope.gotodetail = function(data)
-    {
-        $location.path("#/tab/fixtures/"+data);
+    MyServices.getfixtures().success(fuxturesuccess);
+
+    $scope.gotodetail = function (data) {
+        $location.path("#/tab/fixtures/" + data);
     };
 
 })
 
 .controller('FixturesDetailsCtrl', function ($scope, $stateParams, MyServices) {
-      $scope.matchid = $stateParams.id;
+    $scope.matchid = $stateParams.id;
     console.log($scope.matchid);
 
 })
