@@ -4,9 +4,9 @@
         <table class="table2">
             <thead>
                 <tr style="height:50px">
-                    <th>Rank</th>
                     <th></th>
-                    <th>Team</th>
+                    <th></th>
+                    <th></th>
                     <th>P</th>
                     <th>W</th>
                     <th>D</th>
@@ -17,21 +17,20 @@
                     <th>Pts</th>
                 </tr>
             </thead>
-            <tbody ng-repeat="league in leaguedata">
-                <tr style="height:40px; text-align: center;">
-                    <td>{{league.id}}</td>
-                    <td></td>
-                    <td>{{league.name}}</td>
-                    <td style="text-align: center;">{{league.played}}</td>
-                    <td style="text-align: center;">{{league.won}}</td>
-                    <td style="text-align: center;">{{league.draw}}</td>
-                    <td style="text-align: center;">{{league.lost}}</td>
-                    <td style="align:center">{{league.gf}}</td>
-                    <td style="align:center">{{league.ga}}</td>
-                    <td style="align:center">{{league.gd}}</td>
-                    <td style="align:center">{{league.points}}</td>
+             <tbody >
+                <tr style="text-align: center; border-bottom: solid 1px #" ng-repeat="league in leauedata">
+                    <td width="4%">{{league.id}}</td>
+                    <td width="9%"><img src="img/{{league.logo}}" width="25px" height="25px"></td>
+                    <td width="27%">{{league.name}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: gainsboro;">{{league.played}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: azure;">{{league.won}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: gainsboro;">{{league.draw}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: azure;">{{league.lost}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: gainsboro;">{{league.gf}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: azure;">{{league.ga}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: gainsboro;">{{league.gd}}</td>
+                    <td width="7.5%" style="text-align: center; background-color: azure;">{{league.points}}</td>
                 </tr>
-
             </tbody>
         </table>
     </ion-content>

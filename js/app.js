@@ -57,11 +57,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+  
+  .state('tab.fixturesdetails', {
+      url: '/fixturesdetails',
+      views: {
+        'tab-fixtures': {
+          templateUrl: 'templates/tab-fixturesdetails.html',
+          controller: 'FixturesCtrl'
+        }
+      }
+    })
+  
     .state('tab.pixolo', {
       url: '/pixolo',
       views: {
         'tab-pixolo': {
-          templateUrl: 'templates/tab-pixolo.html',
+          templateUrl: 'templates/tab-fixturesdetails.html',
           controller: 'PixoloCtrl'
         }
       }

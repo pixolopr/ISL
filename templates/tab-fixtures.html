@@ -1,19 +1,56 @@
 <ion-view title="Fixtures">
     <ion-content>
-        <table class="table2">
-            <thead>
-                <tr style="height:50px">
-                    <th>Time/Date</th>
-                    <th></th>
-                    <th>Home Team</th>
-                    <th>Score</th>
-                    <th>Away Team</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody ng-repeat="fixture in fixturedata">
+        <div class="row responsive-sm">
+            <div class="col">
+                <table class="table2">
+                    <thead>
+                        <tr style="height:50px">
+                            <th>Time/Date</th>
+                            <th></th>
+                            <th>Home Team</th>
+                            <th></th>
+                            <th>Away Team</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody style="vertical-align: middle;">
+                       <a href="#/tab/fixturedetails">
+                        <tr style="vertical-align: inherit; border-bottom: solid 1px ">
+                            <td style="vertical-align: middle; text-align: center ">
+                                <p style="font-size: small;"> 09/10 </p>
+                                  <p style="font-size: small;">  07 pm </p>
+                            </td>
+                            <td>
+                                <img src="img/che.png" width="30px" height="30px">
+                            </td>
+                            <td style="text-align: left;">Chennai</td>
+                            <td style="text-align: center;">3 - 2</br> {{abhay}}</td>
+                            <td style="text-align: right;">Mumbai</td>
+                            <td>
+                                <img src="img/che.png" width="30px" height="30px">
+                            </td>
+                        </tr>
+                        </a>
+                        <tr style="vertical-align: inherit; border-bottom: solid 1px ">
+                            <td style="vertical-align: middle; text-align: center ">
+                                <p style="font-size: small;"> 09/10 </p>
+                                  <p style="font-size: small;">  07 pm </p>
+                            </td>
+                            <td>
+                                <img src="img/che.png" width="30px" height="30px">
+                            </td>
+                            <td style="text-align: left;">Chennai</td>
+                            <td style="text-align: center;">3 - 2</br> {{abhay}}</td>
+                            <td style="text-align: right;">Mumbai</td>
+                            <td>
+                                <img src="img/che.png" width="30px" height="30px">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <!--<tbody ng-repeat="fixture in fixturedata">
                 <tr style="height:40px; text-align: center;">
-                    <td>{{fixture.time}}</td>
+                    <td>9th October <br> {{fixture.time}}</td>
                     <td><img src="img/{{fixture.homelogo}}" width="25px" height="25px"></td>
                     <td>{{fixture.homename}}</td>
                     <td style="text-align: center;">{{fixture.score}}</td>
@@ -21,7 +58,9 @@
                     <td><img src="img/{{fixture.awaylogo}}" width="25px" height="25px"></td>
                 </tr>
 
-            </tbody>
-        </table>
+            </tbody>-->
+                </table>
+            </div>
+        </div>
     </ion-content>
 </ion-view>
