@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
 
     var fixturesuccess = function (data, status) {
         $scope.fixturedata = data;
-        console.log($scope.fixturedata);
+        console.log(data);
     };
     MyServices.getfixtures().success(fixturesuccess);
 
