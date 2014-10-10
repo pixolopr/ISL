@@ -14,38 +14,24 @@
                         </tr>
                     </thead>
                     <tbody style="vertical-align: middle;">
-                       <a href="#/tab/fixturedetails">
-                        <tr style="vertical-align: inherit; border-bottom: solid 1px ">
-                            <td style="vertical-align: middle; text-align: center ">
-                                <p style="font-size: small;"> 09/10 </p>
-                                  <p style="font-size: small;">  07 pm </p>
-                            </td>
-                            <td>
-                                <img src="img/che.png" width="30px" height="30px">
-                            </td>
-                            <td style="text-align: left;">Chennai</td>
-                            <td style="text-align: center;">3 - 2</br> {{abhay}}</td>
-                            <td style="text-align: right;">Mumbai</td>
-                            <td>
-                                <img src="img/che.png" width="30px" height="30px">
-                            </td>
-                        </tr>
-                        </a>
-                        <tr style="vertical-align: inherit; border-bottom: solid 1px ">
-                            <td style="vertical-align: middle; text-align: center ">
-                                <p style="font-size: small;"> 09/10 </p>
-                                  <p style="font-size: small;">  07 pm </p>
-                            </td>
-                            <td>
-                                <img src="img/che.png" width="30px" height="30px">
-                            </td>
-                            <td style="text-align: left;">Chennai</td>
-                            <td style="text-align: center;">3 - 2</br> {{abhay}}</td>
-                            <td style="text-align: right;">Mumbai</td>
-                            <td>
-                                <img src="img/che.png" width="30px" height="30px">
-                            </td>
-                        </tr>
+                       
+                                    <tr ng-click="gotodetail({{fixture.id}})" style="vertical-align: inherit; border-bottom: solid 1px " ng-repeat="fixture in fixturedata">
+                                        <td  style="vertical-align: middle; text-align: center ">
+                                            <p style="font-size: small;">{{fixture.date}}</p>
+                                            <p style="font-size: small;">{{fixture.time}}</p>
+                                        </td>
+                                        <td>
+                                            <img src="img/{{fixture.homelogo}}" width="30px" height="30px">
+                                        </td>
+                                        <td style="text-align: left;">{{fixture.homename}}</td>
+                                        <td style="text-align: center;">{{fixture.score}}</br>{{fixture.penalty}}
+                                        </td>
+                                        <td style="text-align: right;">{{fixture.awayname}}</td>
+                                        <td>
+                                            <img src="img/{{fixture.awaylogo}}" width="30px" height="30px">
+                                        </td>
+                                    </tr>
+                      
 
                     </tbody>
                     <!--<tbody ng-repeat="fixture in fixturedata">

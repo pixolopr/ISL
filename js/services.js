@@ -11,13 +11,7 @@ var myservices = angular.module('myservices', [])
 
 
   return {
-    all: function() {
-      return friends;
-    },
-    get: function(friendId) {
-      // Simple index lookup
-      return friends[friendId];
-    },
+
     getfixtures: function() {
         return $http.get( "http://www.pixoloproductions.in/isl_fixtures.php", {params: {}});
     },

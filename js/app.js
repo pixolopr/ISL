@@ -59,20 +59,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     })
   
   .state('tab.fixturesdetails', {
-      url: '/fixturesdetails',
+      url: '/fixtures/:id',
       views: {
-        'tab-fixtures': {
-          templateUrl: 'templates/tab-fixturesdetails.html',
-          controller: 'FixturesCtrl'
+        'tab-fixturesdetails': {
+          templateUrl: 'templates/fixturesdetails.html',
+          controller: 'FixturesDetailsCtrl'
         }
       }
     })
+  
+ 
+   
   
     .state('tab.pixolo', {
       url: '/pixolo',
       views: {
         'tab-pixolo': {
-          templateUrl: 'templates/tab-fixturesdetails.html',
+          templateUrl: 'templates/tab-pixolo.html',
           controller: 'PixoloCtrl'
         }
       }

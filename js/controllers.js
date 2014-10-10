@@ -12,12 +12,24 @@ angular.module('starter.controllers', [])
     console.log($scope.leaguedata.fixture[0].yellowhome[1]);*/
 })
 
-.controller('FixturesCtrl', function ($scope, MyServices) {
-    var fuxturesuccess = function (data, status) {
+.controller('FixturesCtrl', function ($scope, MyServices, $location) {
+   
+ /*   var fuxturesuccess = function (data, status) {
         $scope.fixturedata = data;
         console.log($scope.fixturedata);
     };
-    MyServices.getfixtures().success(fuxturesuccess);
+    MyServices.getfixtures().success(fuxturesuccess);*/
+    
+    $scope.gotodetail = function(data)
+    {
+        $location.path("#/tab/fixtures/"+data);
+    };
+
+})
+
+.controller('FixturesDetailsCtrl', function ($scope, $stateParams, MyServices) {
+      $scope.matchid = $stateParams.id;
+    console.log($scope.matchid);
 
 })
 
