@@ -14,11 +14,11 @@ angular.module('starter.controllers', [])
 
 .controller('FixturesCtrl', function ($scope, MyServices, $location) {
 
-    var fuxturesuccess = function (data, status) {
+    var fixturesuccess = function (data, status) {
         $scope.fixturedata = data;
         console.log($scope.fixturedata);
     };
-    MyServices.getfixtures().success(fuxturesuccess);
+    MyServices.getfixtures().success(fixturesuccess);
 
     $scope.gotodetail = function (data) {
         $location.path("#/tab/fixtures/" + data);

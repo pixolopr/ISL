@@ -15,7 +15,7 @@
                     </thead>
                     <tbody style="vertical-align: middle;">
                        
-                                    <tr ng-click="gotodetail({{fixture.id}})" style="vertical-align: inherit; border-bottom: solid 1px " ng-repeat="fixture in fixturedata">
+                                    <tr  style="vertical-align: inherit; border-bottom: solid 1px " ng-repeat="fixture in fixturedata" ng-click="gotodetail(fixture.id)">
                                         <td  style="vertical-align: middle; text-align: center ">
                                             <p style="font-size: small;">{{fixture.date}}</p>
                                             <p style="font-size: small;">{{fixture.time}}</p>
